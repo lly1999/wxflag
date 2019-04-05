@@ -75,7 +75,7 @@
         "data": {
             "userID": char, //用户名
             "introduce": char,//用户简介
-            "path": char, //头像图片所存URL
+            "head": char, //头像图片所存URL
             "flagNumber": int,//完成FLAG数量
             "gold": int, //金币
             "signCard": int,//签到卡
@@ -97,7 +97,7 @@
     {
         "userID": char, //用户名
         "introduce": char,//用户简介
-        "path": char, //头像图片URL
+        "head": char, //头像图片URL
     }
     ```
 
@@ -129,18 +129,18 @@
     ```json
     {
         "data":{
+            "UserID" :char, //显示昵称
+             "head" :char, // 头像
+            "flagNumber" :int, //完成数量
+        },
+        "data":{
             "UserID" :char,
-             "path" :char,
+             "head" :char,
             "flagNumber" :int,
         },
         "data":{
             "UserID" :char,
-             "path" :char,
-            "flagNumber" :int,
-        },
-        "data":{
-            "UserID" :char,
-             "path" :char,
+             "head" :char,
             "flagNumber" :int,
         },
  }```
