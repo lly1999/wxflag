@@ -127,7 +127,8 @@
   - Return:
 
     ```json
-    {
+    {   "status":bool
+        "errcode":0
         "data":{
             "UserID" :char, //显示昵称
              "head" :char, // 头像
