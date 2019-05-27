@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="wxflag.wxflag_44.dao.UserDao">
+    <select id="queryUser" resultType="wxflag.wxflag_44.dao.UserDao">
+        SELECT userID from
+    </select>
+    <select id="queryUserById" resultType="wxflag.wxflag_44.entity.User">
+        SELECT * from wxflag where userID=${userID}
+    </select>
+<insert id="addUser"parameterType="wxflag.wxflag_44.entity.User">
+    INSERT INTO student_info (UserID, Introduce,  openID, SessionKey) VALUES (#{userID},#{Introduce},#{openID},#{SessionKey})
+</insert>
+
+</mapper>
